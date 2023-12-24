@@ -31,11 +31,18 @@
 </template>
 
 <script>
+import {add,subtract} from '../utils/index'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  created() {
+    const addRes = add(2,3);
+    const subtractRes = subtract(2,3);
+    console.log('subtractRes',addRes);
+    console.log('subtractRes',subtractRes);
+  },
 }
 </script>
 
